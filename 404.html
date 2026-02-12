@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>404 - Page Not Found | Stackly</title>
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide CDN for icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <img src="assets/logo.png">
+                <div class="navbar-logo-text">
+                    <span class="logo-text">STACKLY</span>
+                    <span class="logo-subtitle">Premium Real Estate</span>
+                </div>
+            </div>
+            <div class="navbar-links">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#properties" class="nav-link">Properties</a>
+                <a href="index.html#services" class="nav-link">Services</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="navbar-actions">
+                <a href="tel:+1234567890" class="nav-icon"><i data-lucide="phone" size="18"></i></a>
+                <a href="mailto:info@stackly.com" class="nav-icon"><i data-lucide="mail" size="18"></i></a>
+                <button class="btn-primary-nav" onclick="window.location.href='index.html'">Back to Home</button>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i data-lucide="menu" size="24"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== MOBILE MENU ========== -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-links">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#properties">Properties</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+        <button class="btn-primary-mobile" onclick="window.location.href='index.html'">Back to Home</button>
+    </div>
+
+    <!-- ========== 404 SECTION ========== -->
+    <section class="error-404-section">
+        <div class="error-background">
+            <div class="hero-overlay"></div>
+            <div class="hero-particles">
+                <div class="particle particle-1"></div>
+                <div class="particle particle-2"></div>
+                <div class="particle particle-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="error-404-content">
+                <div class="error-404-icon">
+                    <i data-lucide="alert-circle" size="120"></i>
+                </div>
+                <h1 class="error-404-title">404</h1>
+                <h2 class="error-404-subtitle">Page Not Found</h2>
+                <p class="error-404-description">
+                    Sorry, the page you're looking for doesn't exist or has been moved. 
+                    Let's get you back on track and find your dream property.
+                </p>
+                <div class="error-404-actions">
+                    <button class="btn-hero-primary" onclick="window.location.href='index.html'">
+                        Back to Home
+                        <i data-lucide="home" size="20"></i>
+                    </button>
+                    <button class="btn-hero-secondary" onclick="window.location.href='index.html#properties'">
+                        <i data-lucide="search" size="16"></i>
+                        Browse Properties
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-column brand">
+                        <div class="footer-logo">
+                            <span class="footer-logo-text">STACKLY</span>
+                        </div>
+                        <p class="footer-description">
+                            Your trusted partner in finding the perfect property. 
+                            Excellence in real estate since 2010.
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link"><i data-lucide="facebook" size="18"></i></a>
+                            <a href="#" class="social-link"><i data-lucide="instagram" size="18"></i></a>
+                            <a href="#" class="social-link"><i data-lucide="linkedin" size="18"></i></a>
+                            <a href="#" class="social-link"><i data-lucide="twitter" size="18"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html#home">Home</a></li>
+                            <li><a href="index.html#properties">Properties</a></li>
+                            <li><a href="index.html#services">Services</a></li>
+                            <li><a href="index.html#about">About Us</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="404.html">Buy Property</a></li>
+                            <li><a href="404.html">Sell Property</a></li>
+                            <li><a href="404.html">Rent Property</a></li>
+                            <li><a href="404.html">Property Management</a></li>
+                            <li><a href="404.html">Virtual Tours</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Contact Info</h4>
+                        <ul class="footer-contact">
+                            <li><i data-lucide="map-pin" size="16"></i><span>123 Real Estate Ave, NY 10001</span></li>
+                            <li><i data-lucide="phone" size="16"></i><span>+1 (555) 123-4567</span></li>
+                            <li><i data-lucide="mail" size="16"></i><span>info@stackly.com</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="footer-copyright">© 2024 Stackly Real Estate. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <span class="footer-divider">•</span>
+                        <a href="#">Terms of Service</a>
+                        <span class="footer-divider">•</span>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   <script src="scripts.js"></script>
+</body>
+</html>

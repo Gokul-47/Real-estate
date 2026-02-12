@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Stackly · Luxury Real Estate</title>
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide CDN for icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <img src="assets/logo.png">
+                <div class="navbar-logo-text">
+                    <span class="logo-text">STACKLY</span>
+                    <span class="logo-subtitle">Premium Real Estate</span>
+                </div>
+            </div>
+            <div class="navbar-links">
+                <a href="404.html" class="nav-link">Home</a>
+                <a href="404.html" class="nav-link">Properties</a>
+                <a href="404.html" class="nav-link">Services</a>
+                <a href="404.html" class="nav-link">About</a>
+                <a href="404.html" class="nav-link">Contact</a>
+            </div>
+            <div class="navbar-actions">
+                <a href="404.html" class="nav-icon"><i data-lucide="phone" size="18"></i></a>
+                <a href="404.html" class="nav-icon"><i data-lucide="mail" size="18"></i></a>
+                <button class="btn-primary-nav" onclick="window.location.href='404.html'">List Property</button>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i data-lucide="menu" size="24"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== MOBILE MENU ========== -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-links">
+            <a href="404.html">Home</a>
+            <a href="404.html">Properties</a>
+            <a href="404.html">Services</a>
+            <a href="404.html">About</a>
+            <a href="404.html">Contact</a>
+        </div>
+        <button class="btn-primary-mobile" onclick="window.location.href='404.html'">List Property</button>
+    </div>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero-section" id="home">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="hero-particles">
+                <div class="particle particle-1"></div>
+                <div class="particle particle-2"></div>
+                <div class="particle particle-3"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text-container">
+                <div class="hero-badge animate-fade-in">
+                    <span class="badge-dot"></span>
+                    <span>Trusted by 8,000+ clients worldwide</span>
+                </div>
+                <h1 class="hero-title animate-slide-up">
+                    Discover Your
+                    <span class="hero-title-highlight"> Dream Home</span><br>
+                    in Premium Locations
+                </h1>
+                <p class="hero-subtitle animate-slide-up delay-1">
+                    Experience luxury living with our curated collection of exclusive properties.
+                    From modern penthouses to coastal estates, find your perfect sanctuary.
+                </p>
+                <div class="hero-cta-group animate-slide-up delay-2">
+                    <button class="btn-hero-primary" onclick="window.location.href='404.html'">
+                        Explore Properties
+                        <i data-lucide="chevron-right" size="20"></i>
+                    </button>
+                    <button class="btn-hero-secondary" onclick="window.location.href='404.html'">
+                        <div class="play-icon-wrapper">
+                            <i data-lucide="play" size="16" fill="currentColor"></i>
+                        </div>
+                        Watch Video
+                    </button>
+                </div>
+                <div class="hero-stats animate-fade-in delay-3">
+                    <div class="hero-stat-item">
+                        <div class="stat-value">15K+</div>
+                        <div class="stat-label">Properties</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="hero-stat-item">
+                        <div class="stat-value">₹2500 Cr+</div>
+                        <div class="stat-label">Value Sold</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="hero-stat-item">
+                        <div class="stat-value">98%</div>
+                        <div class="stat-label">Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-container animate-float">
+                <div class="hero-image-card">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" alt="Luxury Property" class="hero-property-image">
+                    <div class="hero-image-badge">
+                        <span class="badge-title">Featured Property</span>
+                        <span class="badge-price">$2.8M</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- ========== SEARCH BAR ========== -->
+    <section class="search-bar-section reveal">
+        <div class="container">
+            <div class="search-bar-card">
+                <div class="search-tabs">
+                    <button class="search-tab active">Buy</button>
+                    <button class="search-tab">Rent</button>
+                    <button class="search-tab">Sell</button>
+                </div>
+                <form class="search-form" onsubmit="event.preventDefault(); alert('Searching for: ' + document.getElementById('searchLocation').value);">
+                    <div class="search-input-group">
+                        <i data-lucide="map-pin" class="search-icon" size="20"></i>
+                        <input type="text" id="searchLocation" placeholder="Location (City, State, ZIP)" class="search-input">
+                    </div>
+                    <div class="search-divider"></div>
+                    <div class="search-input-group">
+                        <i data-lucide="home" class="search-icon" size="20"></i>
+                        <select class="search-select">
+                            <option value="">Property Type</option>
+                            <option value="house">House</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="villa">Villa</option>
+                            <option value="penthouse">Penthouse</option>
+                        </select>
+                    </div>
+                    <div class="search-divider"></div>
+                    <div class="search-input-group">
+                        <i data-lucide="dollar-sign" class="search-icon" size="20"></i>
+                        <select class="search-select">
+                            <option value="">Price Range</option>
+                            <option value="0-500k">$0 - $500K</option>
+                            <option value="500k-1m">$500K - $1M</option>
+                            <option value="1m-2m">$1M - $2M</option>
+                            <option value="2m+">$2M+</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="search-btn">
+                        <i data-lucide="search" size="20"></i>
+                        <span>Search</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FEATURED PROPERTIES ========== -->
+    <section class="featured-section reveal" id="properties">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <span class="section-badge">Premium Collection</span>
+                    <h2 class="section-title">Featured Properties</h2>
+                    <p class="section-subtitle">Handpicked selection of our most exclusive and sought-after properties</p>
+                </div>
+                <button class="btn-view-all" onclick="window.location.href='404.html'">View All Properties</button>
+            </div>
+            <div class="properties-grid" id="propertiesGrid"></div>
+        </div>
+    </section>
+
+    <!-- ========== TRENDING LOCATIONS ========== -->
+    <section class="trending-section reveal">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="section-badge">Popular Destinations</span>
+                <h2 class="section-title">Trending Locations</h2>
+                <p class="section-subtitle">Explore properties in the most sought-after cities with thriving real estate markets</p>
+            </div>
+            <div class="trending-grid" id="trendingGrid"></div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="services-section reveal" id="services">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="section-badge">What We Offer</span>
+                <h2 class="section-title">Our Premium Services</h2>
+                <p class="section-subtitle">Comprehensive real estate solutions tailored to your unique needs</p>
+            </div>
+            <div class="services-grid" id="servicesGrid"></div>
+        </div>
+    </section>
+
+    <!-- ========== STATISTICS ========== -->
+    <section class="statistics-section reveal" id="about">
+        <div class="statistics-background"></div>
+        <div class="stats-overlay"></div>
+        <div class="container">
+            <div class="statistics-content">
+                <div class="statistics-text">
+                    <span class="section-badge light">Our Achievements</span>
+                    <h2 class="section-title light">Trusted Excellence in Real Estate</h2>
+                    <p class="stats-description">
+                        With over a decade of experience, Stackly has established itself as a leader 
+                        in premium real estate services. Our commitment to excellence and client 
+                        satisfaction has resulted in remarkable achievements.
+                    </p>
+                    <button class="btn-stats" onclick="window.location.href='404.html'">Discover Our Story</button>
+                </div>
+                <div class="statistics-grid" id="statsGrid"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== VIRTUAL TOURS ========== -->
+    <section class="virtual-tours-section reveal">
+        <div class="container">
+            <div class="virtual-tours-grid">
+                <div class="virtual-tours-content">
+                    <span class="section-badge">Innovation</span>
+                    <h2 class="section-title">Experience Properties Like Never Before</h2>
+                    <p class="virtual-tours-description">
+                        Our cutting-edge virtual tour technology allows you to explore properties 
+                        from the comfort of your home. Walk through rooms, examine details, and 
+                        get a true sense of the space before scheduling an in-person visit.
+                    </p>
+                    <div class="features-list">
+                        <div class="feature-list-item">
+                            <div class="feature-check"><i data-lucide="check" size="16"></i></div>
+                            <span>360° Interactive Tours</span>
+                        </div>
+                        <div class="feature-list-item">
+                            <div class="feature-check"><i data-lucide="check" size="16"></i></div>
+                            <span>HD Quality Streaming</span>
+                        </div>
+                        <div class="feature-list-item">
+                            <div class="feature-check"><i data-lucide="check" size="16"></i></div>
+                            <span>Detailed Floor Plans</span>
+                        </div>
+                        <div class="feature-list-item">
+                            <div class="feature-check"><i data-lucide="check" size="16"></i></div>
+                            <span>Neighborhood Insights</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary-large" onclick="window.location.href='404.html'">Schedule a Virtual Tour</button>
+                </div>
+                <div class="virtual-tours-media">
+                    <div class="video-container">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" alt="Virtual Tour" class="video-thumbnail">
+                        <div class="video-overlay"></div>
+                        <button class="play-button" onclick="window.location.href='404.html'">
+                            <div class="play-button-inner">
+                                <i data-lucide="play" size="32" fill="currentColor"></i>
+                            </div>
+                            <div class="play-ripple"></div>
+                            <div class="play-ripple delay"></div>
+                        </button>
+                    </div>
+                    <div class="tour-stats-float">
+                        <div class="tour-stat-item">
+                            <div class="tour-stat-icon">🏠</div>
+                            <div>
+                                <div class="tour-stat-value">2,500+</div>
+                                <div class="tour-stat-label">Virtual Tours</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="testimonials-section reveal">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="section-badge">Client Stories</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Real experiences from real people who found their dream homes with Stackly</p>
+            </div>
+            <div class="testimonials-grid" id="testimonialsGrid"></div>
+        </div>
+    </section>
+
+    <!-- ========== TEAM ========== -->
+    <section class="team-section reveal">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="section-badge">Our Team</span>
+                <h2 class="section-title">Meet the Experts</h2>
+                <p class="section-subtitle">Dedicated professionals committed to helping you find your perfect property</p>
+            </div>
+            <div class="team-grid" id="teamGrid"></div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="faq-section reveal">
+        <div class="container">
+            <div class="faq-grid">
+                <div class="faq-content">
+                    <span class="section-badge">FAQ</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="faq-description">
+                        Find answers to common questions about buying, selling, and renting 
+                        properties through Stackly. Can't find what you're looking for? 
+                        Contact our support team.
+                    </p>
+                    <button class="btn-primary-large" onclick="window.location.href='404.html'">Contact Support</button>
+                </div>
+                <div class="faq-list" id="faqList"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== NEWSLETTER ========== -->
+    <section class="newsletter-section reveal" id="contact">
+        <div class="container">
+            <div class="newsletter-card">
+                <div class="newsletter-icon-wrapper">
+                    <i data-lucide="mail" size="48"></i>
+                </div>
+                <div class="newsletter-content">
+                    <h2 class="newsletter-title">Stay Updated with Latest Properties</h2>
+                    <p class="newsletter-subtitle">
+                        Subscribe to our newsletter and be the first to know about new listings, 
+                        market trends, and exclusive offers.
+                    </p>
+                </div>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing: ' + document.getElementById('newsletterEmail').value);">
+                    <div class="newsletter-input-wrapper">
+                        <input type="email" id="newsletterEmail" placeholder="Enter your email address" class="newsletter-input" required>
+                        <button type="submit" class="newsletter-btn">
+                            Subscribe
+                            <i data-lucide="send" size="18"></i>
+                        </button>
+                    </div>
+                    <p class="newsletter-privacy">We respect your privacy. Unsubscribe anytime.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-column brand">
+                        <div class="footer-logo">
+                            <span class="footer-logo-text">STACKLY</span>
+                        </div>
+                        <p class="footer-description">
+                            Your trusted partner in finding the perfect property. 
+                            Excellence in real estate since 2010.
+                        </p>
+                        <div class="footer-social">
+                            <a href="404.html" class="social-link"><i data-lucide="facebook" size="18"></i></a>
+                            <a href="404.html" class="social-link"><i data-lucide="instagram" size="18"></i></a>
+                            <a href="404.html" class="social-link"><i data-lucide="linkedin" size="18"></i></a>
+                            <a href="404.html" class="social-link"><i data-lucide="twitter" size="18"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="404.html">Home</a></li>
+                            <li><a href="404.html">Properties</a></li>
+                            <li><a href="404.html">Services</a></li>
+                            <li><a href="404.html">About Us</a></li>
+                            <li><a href="404.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="404.html">Buy Property</a></li>
+                            <li><a href="404.html">Sell Property</a></li>
+                            <li><a href="404.html">Rent Property</a></li>
+                            <li><a href="404.html">Property Management</a></li>
+                            <li><a href="404.html">Virtual Tours</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Contact Info</h4>
+                        <ul class="footer-contact">
+                            <li><i data-lucide="map-pin" size="16"></i><span>Evolve ,Begur ,Karnataka</span></li>
+                            <li><i data-lucide="phone" size="16"></i><span>+91 1234567890</span></li>
+                            <li><i data-lucide="mail" size="16"></i><span>info@stackly.com</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="footer-copyright">© 2024 Stackly Real Estate. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <span class="footer-divider">•</span>
+                        <a href="#">Terms of Service</a>
+                        <span class="footer-divider">•</span>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   <script src="scripts.js"></script>
+</body>
+</html>
