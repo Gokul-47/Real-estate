@@ -1,18 +1,18 @@
  // ---------- MOCK DATA ----------
         const mockData = {
             featuredProperties: [
-                { id: 1, title: "Luxury Penthouse Suite", location: "Mumbai, Maharashtra", price: "₹2.85 Cr", beds: 4, baths: 3, sqft: "3,200", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80", type: "For Sale" },
-                { id: 2, title: "Modern Villa Residence", location: "Bangalore, Karnataka", price: "₹4.20 Cr", beds: 5, baths: 4, sqft: "4,500", image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80", type: "For Sale" },
-                { id: 3, title: "Coastal Dream Home", location: "Goa, India", price: "₹5.60 Cr", beds: 6, baths: 5, sqft: "5,800", image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80", type: "For Sale" },
-                { id: 4, title: "downtown Apartment", location: "Delhi, NCR", price: "₹1.20 Cr", beds: 3, baths: 2, sqft: "2,100", image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80", type: "For Rent" },
-                { id: 5, title: "Suburban Family Home", location: "Pune, Maharashtra", price: "₹89 Lakhs", beds: 4, baths: 3, sqft: "3,000", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80", type: "For Sale" },
-                { id: 6, title: "Elegant Townhouse", location: "Chennai, Tamil Nadu", price: "₹1.45 Cr", beds: 3, baths: 2, sqft: "2,400", image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80", type: "For Sale" }
+                { id: 1, title: "Luxury Penthouse Suite", location: "Mumbai, Maharashtra", price: "₹2.85 Cr", beds: 4, baths: 3, sqft: "3,200", image: "assets/re1.webp", type: "For Sale" },
+                { id: 2, title: "Modern Villa Residence", location: "Bangalore, Karnataka", price: "₹4.20 Cr", beds: 5, baths: 4, sqft: "4,500", image: "assets/re2.webp", type: "For Sale" },
+                { id: 3, title: "Coastal Dream Home", location: "Goa, India", price: "₹5.60 Cr", beds: 6, baths: 5, sqft: "5,800", image: "assets/re4.webp", type: "For Sale" },
+                { id: 4, title: "downtown Apartment", location: "Delhi, NCR", price: "₹1.20 Cr", beds: 3, baths: 2, sqft: "2,100", image: "assets/re5.webp", type: "For Rent" },
+                { id: 5, title: "Suburban Family Home", location: "Pune, Maharashtra", price: "₹89 Lakhs", beds: 4, baths: 3, sqft: "3,000", image: "assets/re6.webp", type: "For Sale" },
+                { id: 6, title: "Elegant Townhouse", location: "Chennai, Tamil Nadu", price: "₹1.45 Cr", beds: 3, baths: 2, sqft: "2,400", image: "assets/re1.webp", type: "For Sale" }
             ],
             trendingLocations: [
-                { id: 1, city: "Mumbai", state: "Maharashtra", properties: 2450, avgPrice: "₹65 Lakhs", image: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800&q=80" },
-                { id: 2, city: "Bangalore", state: "Karnataka", properties: 3150, avgPrice: "₹89 Lakhs", image: "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=80" },
-                { id: 3, city: "Delhi", state: "NCR", properties: 2980, avgPrice: "₹72 Lakhs", image: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800&q=80" },
-                { id: 4, city: "Pune", state: "Maharashtra", properties: 2580, avgPrice: "₹58 Lakhs", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" }
+                { id: 1, city: "Mumbai", state: "Maharashtra", properties: 2450, avgPrice: "₹65 Lakhs", image: "assets/loc1.webp" },
+                { id: 2, city: "Bangalore", state: "Karnataka", properties: 3150, avgPrice: "₹89 Lakhs", image: "assets/loc2.webp" },
+                { id: 3, city: "Delhi", state: "NCR", properties: 2980, avgPrice: "₹72 Lakhs", image: "assets/loc4.webp" },
+                { id: 4, city: "Pune", state: "Maharashtra", properties: 2580, avgPrice: "₹58 Lakhs", image: "assets/loc1.webp" }
             ],
             services: [
                 { id: 1, title: "Buy Property", description: "Find your dream home from our extensive collection of premium properties across prime Indian locations.", icon: "home" },
@@ -29,15 +29,15 @@
                 { id: 4, value: "98%", label: "Success Rate" }
             ],
             testimonials: [
-                { id: 1, name: "Priya Sharma", role: "Property Buyer", image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80", rating: 5, text: "Stackly made finding our dream home in Bangalore effortless. Their team was professional, responsive, and truly understood our needs. Highly recommend!" },
-                { id: 2, name: "Rajesh Kumar", role: "Real Estate Investor", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80", rating: 5, text: "Outstanding service! The virtual tours saved me countless hours, and their market insights helped me make a profitable investment in Mumbai." },
-                { id: 3, name: "Anjali Desai", role: "Home Seller", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80", rating: 5, text: "Sold my property in Delhi in just 3 weeks! The marketing strategy and professional photography made all the difference." }
+                { id: 1, name: "Priya Sharma", role: "Property Buyer", image: "assets/team1.webp", rating: 5, text: "Stackly made finding our dream home in Bangalore effortless. Their team was professional, responsive, and truly understood our needs. Highly recommend!" },
+                { id: 2, name: "Rajesh Kumar", role: "Real Estate Investor", image: "assets/team2.webp", rating: 5, text: "Outstanding service! The virtual tours saved me countless hours, and their market insights helped me make a profitable investment in Mumbai." },
+                { id: 3, name: "Anjali Desai", role: "Home Seller", image: "assets/team1.webp", rating: 5, text: "Sold my property in Delhi in just 3 weeks! The marketing strategy and professional photography made all the difference." }
             ],
             team: [
-                { id: 1, name: "Amit Patel", role: "CEO & Founder", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80", social: { linkedin: "#", twitter: "#" } },
-                { id: 2, name: "Neha Singh", role: "Head of Sales", image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80", social: { linkedin: "#", twitter: "#" } },
-                { id: 3, name: "Vikram Reddy", role: "Property Consultant", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80", social: { linkedin: "#", twitter: "#" } },
-                { id: 4, name: "Divya Malhotra", role: "Marketing Director", image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80", social: { linkedin: "#", twitter: "#" } }
+                { id: 1, name: "Amit Patel", role: "CEO & Founder", image: "assets/team1.webp", social: { linkedin: "#", twitter: "#" } },
+                { id: 2, name: "Neha Singh", role: "Head of Sales", image: "assets/team2.webp", social: { linkedin: "#", twitter: "#" } },
+                { id: 3, name: "Vikram Reddy", role: "Property Consultant", image: "assets/team1.webp", social: { linkedin: "#", twitter: "#" } },
+                { id: 4, name: "Divya Malhotra", role: "Marketing Director", image: "assets/team2.webp", social: { linkedin: "#", twitter: "#" } }
             ],
             faqs: [
                 { id: 1, question: "How do I start buying a property through Stackly?", answer: "Simply browse our Indian property listings, schedule a viewing, and our expert agents will guide you through the entire process from offer to closing." },
